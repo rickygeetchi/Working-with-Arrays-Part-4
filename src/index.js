@@ -1,5 +1,11 @@
 const myListDiv = document.getElementById('list');
-const myBooleans = [false, true, false, false, true, false, true ]
+const myHobbies = [
+    'Music',
+    'Arroz con Pollo',
+    'Watching Sports',
+    'Catching Up With Friends',
+    
+ ]
 
 
 function addName(name) {
@@ -10,7 +16,10 @@ function addName(name) {
 
 }
 
-const newBooleans = myBooleans.map(number => !number)
-newBooleans.forEach(number => addName(number))
+const newHobby = myHobbies.sort((hobbyA, hobbyB) => {
+    if(hobbyA < hobbyB) {return -1;}
+    if(hobbyA < hobbyB) {return 1;}
+    return 0;
+}).forEach(number => addName(number));
 
 
