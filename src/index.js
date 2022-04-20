@@ -1,6 +1,6 @@
 const myListDiv = document.getElementById('list');
-const myRandomNums = [54,27,69,40,33,99,88 ]
-const myHobbyList = document.getElementById('hobbies')
+const myBooleans = [false, true, false, false, true, false, true ]
+
 
 function addName(name) {
     const h1 = document.createElement('h1');
@@ -10,7 +10,7 @@ function addName(name) {
 
 }
 
-const numList = myRandomNums.map(number => number*2)
-numList.forEach(number => addName(number))
+const newBooleans = myBooleans.map(number => !number)
+newBooleans.forEach(number => addName(number))
 
 
