@@ -1,18 +1,16 @@
 const myListDiv = document.getElementById('list');
-const myHobbies = ['Music', 'Video Games', 'Watching Interviews' ]
+const myRandomNums = [54,27,69,40,33,99,88 ]
 const myHobbyList = document.getElementById('hobbies')
 
-function addname(name) {
+function addName(name) {
     const h1 = document.createElement('h1');
     h1.innerText = name;
-    h1.className = 'hob-list';
-    myHobbyList.appendChild(h1);
+    h1.className = 'name';
+    myListDiv.appendChild(h1);
 
 }
 
-// addname('Ricky 2');
+const numList = myRandomNums.map(number => number*2)
+numList.forEach(number => addName(number))
 
-myHobbies.forEach(hobby => {
-    addname(hobby);
 
-} )
