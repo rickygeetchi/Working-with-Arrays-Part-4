@@ -18,7 +18,7 @@ function addName(name) {
 
 const newHobby = myHobbies.sort((hobbyA, hobbyB) => {
     if(hobbyA < hobbyB) {return -1;}
-    if(hobbyA < hobbyB) {return 1;}
+    if(hobbyA > hobbyB) {return 1;}
     return 0;
 }).forEach(number => addName(number));
 
